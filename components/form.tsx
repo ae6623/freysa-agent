@@ -1,7 +1,7 @@
-import {
-  TransferButtonEVM,
-  TransferButtonSolana,
-} from "@/components/transferbutton";
+// import {
+//   TransferButtonEVM,
+//   TransferButtonSolana,
+// } from "@/components/transferbutton";
 
 export function Form() {
   return (
@@ -14,8 +14,11 @@ export function Form() {
       </div>
 
       <div className="z-10 flex min-h-30 items-center justify-center">
-        <TransferButtonEVM />
-        <TransferButtonSolana />
+        {/* <TransferButtonEVM />
+        <TransferButtonSolana /> */}
+        <button style={{flex:'1'}}>
+        button
+        </button>
       </div>
     </form>
   );
