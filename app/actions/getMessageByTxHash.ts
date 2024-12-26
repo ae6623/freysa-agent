@@ -1,6 +1,6 @@
 import { TMessage } from "./getMessages";
 
-export async function getMessageByTxHash(txHash: string): Promise<TMessage | undefined> {
+export async function getMessageByTxHash(txHash: string, txExpiryMinutes? : number | undefined): Promise<TMessage | undefined> {
   try {
     // Placeholder implementation
     return {
