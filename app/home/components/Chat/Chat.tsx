@@ -43,9 +43,8 @@ export const Chat = ({
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const lastMessageRef = useRef<string | null>(null);
   const lastMessageContentRef = useRef<string | null>(null);
-  const [selectedMessageTxHash, setSelectedMessageTxHash] = useState<
-    string | null
-  >(null);
+  const [selectedMessageTxHash, setSelectedMessageTxHash] = useState<string | null | undefined>(null);
+
   const [textareaHeight, setTextareaHeight] = useState(40);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
