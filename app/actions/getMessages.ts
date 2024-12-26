@@ -10,7 +10,8 @@ export type TMessage = {
   createdAt: Date;
   isWinner?: boolean;
   fullConversation?: string;
-  txHash?: string;
+  txHash?: string| null | undefined;
+  price?: string | null | undefined;
 };
 
 export async function getRecentMessages(userWallet?: string, limit: number = 50): Promise<TMessage[]> {
